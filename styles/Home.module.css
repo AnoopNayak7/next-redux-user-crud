@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  @apply lg:px-[4rem] px-5
 }
 
 .main {
