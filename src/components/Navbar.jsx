@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="py-2 font-bold text-xl flex justify-between items-center">
+    <div className="py-3 font-bold text-2xl flex justify-between items-center">
       <div className="text-secondary">
         InstaSafe<span className="text-primary text-xl">.</span>
       </div>

@@ -3,11 +3,13 @@ import { Drawer } from 'antd';
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { addUsers } from '../services/Toolkit/user.slice';
+import { v4 as uuid } from 'uuid';
+
+let count = 1;
 
 
 const AddUserWidget = () => {
     const dispatch = useDispatch();
-
 
     const [open, setOpen] = useState(false);
     const [newUser, setnewUser] = useState({
@@ -37,8 +39,10 @@ const AddUserWidget = () => {
         console.log(newUser)
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
         dispatch(addUsers(newUser));
+        onClose()
     }
 
     return (
