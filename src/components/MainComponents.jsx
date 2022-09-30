@@ -52,7 +52,7 @@ const MainComponents = () => {
                         {
                            allUsers && allUsers.length>0 && users.map((item, index) => {
                                 return (
-                                    <div className={`rounded-md px-3 py-4 bxswd bg-white relative ${showDetails === index ? 'h-full' : 'h-[100px]'}`} key={index}>
+                                    <div className={`rounded-md px-3 py-4 bxswd bg-white border border-primary relative ${showDetails === index ? 'h-full' : 'h-[100px]'}`} key={index}>
                                         <div onClick={() => handleDeleteUser(index)} className='absolute right-1 -top-3 bg-white bxswww hover:bg-error cursor-pointer hover:text-white w-8 flex items-center justify-center h-8 rounded-full'><DeleteOutlined /></div>
                                         <div className='text-secondary'><span className='font-medium'>Name: </span>{item?.name}</div>
                                         <div className='flex gap-2 text-secondary'><span className='font-medium'>Email: </span>{item?.email}</div>
