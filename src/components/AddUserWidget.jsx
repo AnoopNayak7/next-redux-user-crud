@@ -36,7 +36,6 @@ const AddUserWidget = () => {
     const handleChangeInput = e => {
         const { name, value } = e.target
         setnewUser({ ...newUser, [name]: value })
-        console.log(newUser)
     }
 
     const handleSubmit = (e) => {

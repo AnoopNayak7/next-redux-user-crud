@@ -19,7 +19,6 @@ const MainComponents = () => {
 
     const { users } = useSelector(getAllUsers);
     useEffect(()=>{
-        console.log("users",users)
         setAllUsers(users)
     },[users])
 
