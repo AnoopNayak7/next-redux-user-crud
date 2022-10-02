@@ -14,5 +14,5 @@
 
 
 <hr />
-👨‍💻 Checkout my Portfolio:  [https://anoopnayak.vercel.app/](https://anoopnayak.vercel.app/)
+👨‍💻 Checkout my Portfolio: <a href="https://anoopnayak.vercel.app/">Portfolio Link</a> <br/>
 📫 How to reach me **anoopnayak1@gmail.com**
